@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: Outfit;
+}
+
+/* Image Optimization Classes */
+.img-logo {
+    @apply object-contain object-center;
+    max-width: 200px;
+    height: auto;
+}
+
+.img-hero {
+    @apply w-full h-auto object-cover object-center rounded-lg;
+    max-width: 900px;
+    max-height: 500px;
+    aspect-ratio: 16/9;
+}
+
+.img-card {
+    @apply w-full h-auto object-cover object-center rounded-lg;
+    aspect-ratio: 4/3;
+    max-width: 600px;
+}
+
+.img-page {
+    @apply w-full h-auto object-cover object-center rounded-lg;
+    aspect-ratio: 4/3;
+    max-width: 360px;
+}
+
+/* Lazy loading placeholder */
+img[loading="lazy"] {
+    background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+    background-size: 200% 100%;
+    animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+    0% {
+        background-position: 200% 0;
+    }
+
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.active hr {
+    @apply block
+}
+
+@media (max-width:740px) {
+    .active p {
+        @apply text-white bg-primary
+    }
+}
+
+::-webkit-scrollbar {
+    @apply hidden
+}
