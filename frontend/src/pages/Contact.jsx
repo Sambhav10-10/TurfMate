@@ -43,10 +43,10 @@ const Contact = () => {
                 <p className='text-lg font-bold text-gray-800 mb-3'>📧 Get In Touch</p>
                 <div className='text-gray-600 space-y-2'>
                   <p>
-                    <span className='font-semibold'>📱 Phone:</span> (415) 555-0132
+                    <span className='font-semibold'>📱 Phone:</span> +91-7828759100
                   </p>
                   <p>
-                    <span className='font-semibold'>✉️ Email:</span> greatstackdev@gmail.com
+                    <span className='font-semibold'>✉️ Email:</span> koshtasambhav18@gmail.com
                   </p>
                 </div>
               </div>
